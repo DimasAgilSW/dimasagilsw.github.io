@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:
+    'Gill Sans',
+    'Gill Sans MT',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+}
+
+body{
+    /* transition: 0.5s; */
+    /* background-color: #f7f7f7; */
+    background-image: url(../img/photo.jpg);
+    background-size: 100% 1500px;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position-x: -300px;
+    background-position-y: -20px;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+
+#toggle-flex-sidebar-list{
+    /* display: flex; */
+    display: none;
+}
+
+#flex-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+#toggle-navbar{
+    /* display: flex; */
+    cursor: pointer;
+    display: none;
+}
+
+/* .flex-navbar,
+.flex-navbar-logo,
+.flex-navbar > ul, li{ 
+    border: 1px solid black;
+} */
+
+/* NAVBAR FLEX */
+.flex-navbar{
+    display: flex;
+    /* background-color: #fff; */
+    background-color: transparent;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.flex-navbar-logo{
+    padding: 10px;
+    flex: 1;
+    /* max-width: 20%; */
+    margin: 0 auto;
+}
+
+.flex-navbar li{
+    display: inline-flex;
+    list-style: none;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    /* background-color:#000; */
+    /* border-radius: 4px; */
+}
+
+.flex-navbar a{
+    color: #000;
+}
+
+.flex-navbar a:hover{
+    color: blue;
+}
+
+/* FLEX JUMBOTRON */
+.flex-jumbotron{
+    display: flex;
+    /* border: 1px solid black; */
+    /* padding: 50px 50px;  */
+    max-width: 100%;
+    /* margin: 0 auto; */
+    height: 600px;
+}
+
+.flex-jumbotron-content{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    max-width: 40%;
+    margin: 0 0 0 50%;
+    padding: 6% 0;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* background-color: #000; */
+    /* color: #fff */
+}
+
+.flex-jumbotron-content img{
+    width: 50%;
+    margin: 20px 0;
+}
+
+.flex-jumbotron-content span{
+    display: flex;    
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+/* CONTAINER & SIDEBAR FLEX */
+.flex-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fff;
+}
+
+.flex-wrapper > *{
+    padding: 15px;
+    margin: 5px;
+}
+
+/* LAYOUT FLEX */
+.flex-main-content,
+.flex-sidebar{
+    width: 100%;
+}
+
+.flex-main-content{
+    /* background-color: aqua; */
+    order: 2;
+}
+
+.flex-sidebar{  
+    /* background-color: brown; */    
+    order: 1;
+}
+/* END */
+
+/* CARD FLEX */
+.flex-card{
+    /* border: 1px solid black; */
+    max-width: 100%;
+    margin: 10px 0 10px 0;
+    /* padding: 5px; */
+    box-shadow: 2px 1px 5px 0 black;
+    border-radius: 5px;
+}
+
+.flex-card-header{
+    /* border: 1px solid black; */
+    /* margin: 10px 0 0 0; */
+    padding: 5px;
+    max-width: 50%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px 0 15px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.flex-card-body{
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 3%;
+    padding: 20px;
+}
+/* END FLEX CARD */
+
+.flex-sidebar-list{
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    /* margin: 10px 0 0 0; */
+    /* padding: 10px; */
+}
+
+.flex-sidebar-list a{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 10px;
+    /* max-width: 100%; */
+    width: 100%;
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: #000;
+}
+
+.flex-sidebar-list a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#flex-toggle{
+    float: right;
+}
+
+/* TABLE FLEX */
+td{
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.table-flex{
+    display: flex;
+    flex-direction: column;
+    justify-items: inherit;
+    /* border: 1px solid black; */
+    padding: 15px;
+    /* width: 100%; */
+}
+/* END */
+
+/* Responsive Breakpoint */
+@media (max-width: 1173px){
+    body{
+        background-position-x: -200px;
+        background-position-y: -60px;
+    }
+}
+
+@media (min-width: 1024px){
+    .flex-main-content{
+        /* max-width: 100%; */
+        flex: 3;
+        order: 2;
+    }
+
+    .flex-sidebar{
+        flex: 1;
+        order: 1;
+    }
+
+    .flex-sidebar-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        max-width: 91%;
+    }
+
+    .flex-sidebar-list a{
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px){
+    .flex-sidebar-list a{
+        margin: 5px 5px;
+    }
+}
+
+@media (max-width: 777px){
+    body{
+        background-position-x: -150px;
+        background-position-y: -60px;
+    }
+}
+
+@media (max-width: 768px){
+    /* body{
+        background-position-x: -200px;
+        background-position-y: -60px;
+    } */
+
+    ul{
+        display: none;
+        /* display: flex; */
+    }
+
+    #check-navbar-flex:checked ~ ul{
+        display: flex;
+        /* display: none; */
+        justify-content: center;
+        flex-direction: row;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 40px auto;
+        /* z-index: 0; */
+        background-color: #000;
+    }
+
+    #check-navbar-flex:checked ~ li{
+        margin: 10px;
+    }
+
+    .flex-navbar a{
+        color: #fff;
+    }
+
+    #toggle-navbar{
+        display: flex;
+        margin-right: 20px; 
+    }
+
+    .flex-sidebar-list{
+        display: none;
+        /* display: flex; */
+    }
+
+    #flex-toggle{
+        display: flex;
+    }
+
+    #toggle-flex-sidebar-list:checked ~ .flex-sidebar-list{
+        display: flex;
+        flex-direction: column;
+        /* position: relative; */
+        justify-content: center;
+        /* margin: 0; */
+    }
+
+    .flex-sidebar-list a{
+        margin: 5px 0;
+        max-width: 96%;
+    }
+}
+
+@media (max-width: 375px){
+    .flex-wrapper{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
