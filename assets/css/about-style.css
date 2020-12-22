@@ -283,7 +283,7 @@ body{
         border-radius: 50%;
         /* border: 1px solid black; */
         width: 50%;
-/*         height: auto; */
+        height: 10%;
         margin: 20px 15px;
         box-shadow: 0 0 8px 0 black;
     }
