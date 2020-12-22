@@ -283,7 +283,7 @@ body{
         border-radius: 50%;
         /* border: 1px solid black; */
         width: 50%;
-/*         height: 650px; */
+        height: 650px;
         margin: 20px 15px;
         box-shadow: 0 0 8px 0 black;
     }
@@ -308,5 +308,12 @@ body{
 
     .flex-logo{
         display: none;
+    }
+}
+
+@media (max-width: 321px){
+    .img-flex img:nth-child(1),
+    .img-flex img:nth-child(2){
+        height: 650px;
     }
 }
