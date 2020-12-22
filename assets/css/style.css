@@ -57,6 +57,9 @@ input[type=checkbox]{
 /* NAVBAR FLEX */
 .flex-navbar{
     display: flex;
+    /* position: sticky;
+    position: -webkit-sticky;
+    top: 0; */
     /* background-color: #fff; */
     background-color: transparent;
     /* justify-content: center; */
@@ -64,10 +67,17 @@ input[type=checkbox]{
 }
 
 .flex-navbar-logo{
+    display: flex;
+    align-items: center;
     padding: 10px;
     flex: 1;
     /* max-width: 20%; */
     margin: 0 auto;
+}
+
+.flex-navbar-logo img{
+    width: 10%;
+    margin: 0 10px;
 }
 
 .flex-navbar li{
@@ -127,6 +137,7 @@ input[type=checkbox]{
 /* CONTAINER & SIDEBAR FLEX */
 .flex-wrapper{
     display: flex;
+    max-width: 100%;
     flex-flow: row wrap;
     background-color: #fff;
 }
@@ -155,6 +166,7 @@ input[type=checkbox]{
 
 /* CARD FLEX */
 .flex-card{
+    display: block;
     /* border: 1px solid black; */
     max-width: 100%;
     margin: 10px 0 10px 0;
@@ -164,6 +176,7 @@ input[type=checkbox]{
 }
 
 .flex-card-header{
+    display: block;
     /* border: 1px solid black; */
     /* margin: 10px 0 0 0; */
     padding: 5px;
@@ -176,6 +189,8 @@ input[type=checkbox]{
 }
 
 .flex-card-body{
+    /* display: block; */
+    /* display: flex; */
     /* border: 1px solid black; */
     padding: 5px;
 }
@@ -222,17 +237,21 @@ ol{
 
 /* TABLE FLEX */
 td{
-    /* border: 1px solid black; */
     padding: 10px;
 }
 
 .table-flex{
+    /* display: block; */
     display: flex;
-    flex-direction: column;
-    justify-items: inherit;
+    /* flex-flow: row wrap; */
+    max-width: 100%;
+    /* justify-items: inherit; */
     /* border: 1px solid black; */
     padding: 15px;
-    /* width: 100%; */
+}
+
+.table-flex td:nth-child(1){
+    vertical-align: text-top;
 }
 /* END */
 
@@ -270,20 +289,15 @@ td{
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 768px){
     .flex-sidebar-list a{
         margin: 5px 5px;
     }
-}
 
-@media (max-width: 777px){
     body{
         background-position-x: -150px;
         background-position-y: -60px;
     }
-}
-
-@media (max-width: 768px){
     /* body{
         background-position-x: -200px;
         background-position-y: -60px;
@@ -301,15 +315,21 @@ td{
         flex-direction: row;
         position: absolute;
         width: 100%;
-        top: 0;
+        top: 12.5%;
         left: 0;
         margin: 40px auto;
         /* z-index: 0; */
         background-color: #000;
+        opacity: 0.9;
     }
 
     #check-navbar-flex:checked ~ li{
         margin: 10px;
+    }
+
+    .flex-navbar{
+        background-color: #fff;
+        opacity: 0.9;
     }
 
     .flex-navbar a{
@@ -344,11 +364,87 @@ td{
     }
 }
 
-@media (max-width: 375px){
-    .flex-wrapper{
-        display: flex;
-        width: 100%;
-        padding: 0;
+@media (max-width: 501px){
+    body{
+        background: #f7f7f7;
+    }
+
+    .flex-jumbotron{
+        justify-content: center;
+    }
+
+    .flex-jumbotron-content{
+        /* border: 1px solid black;         */
+        justify-content: center;
         margin: 0;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .flex-navbar{
+        background: transparent;
+    }
+
+    .flex-jumbotron-content img{
+        width: 70%;
+    }
+
+    .table-flex{
+        padding: 0;
+    }
+
+    .table-flex td{
+        display: flex;
+        flex-direction: column;
+        margin: 5px auto;
+        /* padding: 10px; */
+    }
+
+    .table-flex td:nth-child(1),
+    .table-flex td:nth-child(2){        
+        width: 90%;
+    }
+
+    .flex-card:nth-child(2)
+    .table-flex td{
+        margin: 10px 20px;
+        width: 100%;
+    }
+
+    #check-navbar-flex:checked .flex-navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #check-navbar-flex:checked ~ ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 14%;
+        left: 0;
+        /* margin: 40px auto; */
+        /* z-index: 0; */
+        background-color: #000;
+    }
+
+    .flex-navbar-logo img{
+        width: 20%;
+    }
+}
+
+@media (max-width: 376px){
+    #check-navbar-flex:checked ~ ul{
+        top: 11%;
+    }
+}
+
+@media (max-width: 321px){
+    .flex-navbar-logo img{
+        width: 25%;
+    }
+
+    #check-navbar-flex:checked ~ ul{
+        top: 12%;
     }
 }

@@ -75,6 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     /* flex: 1; */
     width: 100%;
     order: 2;
@@ -94,11 +95,7 @@
 
 .flex-contact-logo img{
     margin: 10px;
-    width: 10%;
-}
-
-.flex-contact-logo img:nth-child(3){
-    width: 30%;
+    width: 20%;
 }
 
 .flex-contact-project-logo{
@@ -108,12 +105,14 @@
 }
 
 .flex-contact-project-logo img{
-    width: 30%;
+    width: 50%;
 }
 
 .flex-media-social{
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    flex-flow: row wrap
 }
 
 .flex-media-social i{
@@ -154,5 +153,13 @@
 @media (max-width: 426px){
     .img-flex{
         width: 100%;
+    }
+
+    .flex-contact-logo img{
+        width: 30%;
+    }
+
+    .flex-contact-project-logo img{
+        width: 80%;
     }
 }
