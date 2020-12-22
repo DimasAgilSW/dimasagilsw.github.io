@@ -163,6 +163,10 @@
     .img-flex{
         width: 40%;
     }
+    
+    .flex-contact-text span{
+        line-height: 1.65;
+    }
 }
 
 @media (max-width: 426px){
@@ -176,5 +180,9 @@
 
     .flex-contact-project-logo img{
         width: 80%;
+    }
+    
+    .flex-contact-text span{
+        line-height: 1.65;
     }
 }
