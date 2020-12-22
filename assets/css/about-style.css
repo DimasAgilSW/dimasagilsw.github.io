@@ -311,10 +311,10 @@ body{
     }
 }
 
-@media (max-width: 321px){
+/* @media (max-width: 321px){
     .img-flex img:nth-child(1),
     .img-flex img:nth-child(2){
         width: 50%;
         height: auto;
     }
-}
+} */
