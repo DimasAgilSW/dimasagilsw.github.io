@@ -12,9 +12,10 @@
     padding: 0;
 }
 
-.flex-wrapper-conatiner{
+.flex-wrapper-container{
     display: flex;
     max-width: 100%;
+    flex-direction: column;
 }
 
 /* Project Main Page */
