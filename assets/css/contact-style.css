@@ -92,6 +92,10 @@
     order: 2;
 }
 
+.flex-contact-text span{
+    line-height: 1.65;
+}
+
 .flex-contact-text h1{
     text-shadow: 2px 2px yellowgreen;
     color: orangered;
