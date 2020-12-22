@@ -11,6 +11,16 @@
     sans-serif;
 }
 
+.flex-wrapper-container{
+    display: flex;
+    max-width: 100%;
+}
+
+.flex-wrapper-container{
+    display: flex;
+    max-width: 100%;
+}
+
 .flex-span-arrow{
     display: flex;
     /* order: 1; */

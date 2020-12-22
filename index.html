@@ -3,9 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#ffffff">
-<!--         <link rel="icon" href="https://dimasagilsw.github.io/assets/img/favicon.ico" />
-        <link rel="manifest" href="assets/img/site.webmanifest" /> -->
+        <!-- <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/png"> -->
         <!-- Font Awesome 5 CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.css"
         integrity="sha512-qUzMY3p2A7wsZaOjjgE3UaFsM8R0hwxTGcQ/Z4vi3eHWg3J7BTyG+2JxjweaHWFrOkXCyvriwQqFMPCvHJmqyA=="
@@ -15,165 +13,167 @@
         crossorigin="anonymous" />
 
         <!-- Font Awesome 5 Standalone Compiler -->
-<!--         <link rel="stylesheet" href="assets/fa/css/fontawesome.css">
+        <!-- <link rel="stylesheet" href="assets/fa/css/fontawesome.css">
         <link rel="stylesheet" href="assets/fa/css/solid.css"> -->
         <link rel="stylesheet" href="assets/css/style.css">
         <title>DimasAgil_SW Portofolio</title>
     </head>
     <body>
-        <nav class="flex-navbar">
-            <div class="flex-navbar-logo">
-                <img src="assets/img/logo.png" alt="logo">
-                <h3>DimasAgilSW</h3>
+        <div class="flex-wrapper-container">
+            <nav class="flex-navbar">
+                <div class="flex-navbar-logo">
+                    <img src="assets/img/logo.png" alt="logo">
+                    <h3>DimasAgilSW</h3>
+                </div>
+                <input type="checkbox" id="check-navbar-flex">
+                <label for="check-navbar-flex">
+                    <i id="toggle-navbar" class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="project/">Project</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="flex-jumbotron">
+                <div class="flex-jumbotron-content">
+                    <img src="assets/img/logo.png" alt="logo">
+                    <h1>Hello Everyone, Welcome!</h1>
+                    <span>
+                        This is my portofolio, Check it Out
+                        on this below!
+                    </span>
+                </div>
             </div>
-            <input type="checkbox" id="check-navbar-flex">
-            <label for="check-navbar-flex">
-                <i id="toggle-navbar" class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="project/">Project</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="flex-jumbotron">
-            <div class="flex-jumbotron-content">
-                <img src="assets/img/logo.png" alt="logo">
-                <h1>Hello Everyone, Welcome!</h1>
-                <span>
-                    This is my portofolio, Check it Out
-                    on this below!
-                </span>
-            </div>
-        </div>
-        <div class="flex-wrapper">
-            <div class="flex-main-content">
-                <h3>Portofolio</h3>
-                <hr>
-                <div class="flex-main-content-list">
-                    <div class="flex-card">
-                        <div class="flex-card-header">
-                            Education Background
+            <div class="flex-wrapper">
+                <div class="flex-main-content">
+                    <h3>Portofolio</h3>
+                    <hr>
+                    <div class="flex-main-content-list">
+                        <div class="flex-card">
+                            <div class="flex-card-header">
+                                Education Background
+                            </div>
+                            <div class="flex-card-body">
+                                <table class="table-flex">
+                                    <tr>
+                                        <td>Sept 2017 - August 2020</td>
+                                        <td>
+                                            Universitas Merdeka Malang<br>
+                                            Major: D3 Sistem Informasi
+                                        </td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Sept 2019 - Nov 2019</td>
+                                        <td>
+                                            Digital Talent Scholarship<br>
+                                            Kementerian Komunikasi dan Informatika<br>
+                                            Scope: Junior Web Programming
+                                        </td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>July 2014 - May 2017</td>
+                                        <td>
+                                            SMK NASIONAL MALANG<br>
+                                            Major: Rekayasa Prengkat Lunak (Software Engineer)
+                                        </td>                                    
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                        <div class="flex-card-body">
-                            <table class="table-flex">
-                                <tr>
-                                    <td>Sept 2017 - August 2020</td>
-                                    <td>
-                                        Universitas Merdeka Malang<br>
-                                        Major: D3 Sistem Informasi
-                                    </td>                                    
-                                </tr>
-                                <tr>
-                                    <td>Sept 2019 - Nov 2019</td>
-                                    <td>
-                                        Digital Talent Scholarship<br>
-                                        Kementerian Komunikasi dan Informatika<br>
-                                        Scope: Junior Web Programming
-                                    </td>                                    
-                                </tr>
-                                <tr>
-                                    <td>July 2014 - May 2017</td>
-                                    <td>
-                                        SMK NASIONAL MALANG<br>
-                                        Major: Rekayasa Prengkat Lunak (Software Engineer)
-                                    </td>                                    
-                                </tr>
-                            </table>
+                        <div class="flex-card">
+                            <div class="flex-card-header">
+                                Language
+                            </div>
+                            <div class="flex-card-body">
+                                <table class="table-flex">
+                                    <tr>
+                                        <td>English</td>
+                                        <td>
+                                            Listening<br>
+                                            310
+                                        </td>
+                                        <td>
+                                            Reading<br>
+                                            220
+                                        </td>
+                                        <td>
+                                            Relevant Cretificates<br>
+                                            TOEIC 530
+                                        </td>                                    
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex-card">
-                        <div class="flex-card-header">
-                            Language
+                        <div class="flex-card">
+                            <div class="flex-card-header">
+                                Skills
+                            </div>
+                            <div class="flex-card-body">
+                                <ol>
+                                    <li>
+                                        Experience for Development
+                                        & Application Website with
+                                        CodeIgniter & Bootstrap framework.
+                                    </li>
+                                    <li>
+                                        Familiar with Visual Studio
+                                        for Apps Development.
+                                    </li>
+                                    <li>
+                                        Familiar with Microsoft Office
+                                        (Word, Excel, Power Point).
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="flex-card-body">
-                            <table class="table-flex">
-                                <tr>
-                                    <td>English</td>
-                                    <td>
-                                        Listening<br>
-                                        310
-                                    </td>
-                                    <td>
-                                        Reading<br>
-                                        220
-                                    </td>
-                                    <td>
-                                        Relevant Cretificates<br>
-                                        TOEIC 530
-                                    </td>                                    
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="flex-card">
-                        <div class="flex-card-header">
-                            Skills
-                        </div>
-                        <div class="flex-card-body">
-                            <ol>
-                                <li>
-                                    Experience for Development
-                                    & Application Website with
-                                    CodeIgniter & Bootstrap framework.
-                                </li>
-                                <li>
-                                    Familiar with Visual Studio
-                                    for Apps Development.
-                                </li>
-                                <li>
-                                    Familiar with Microsoft Office
-                                    (Word, Excel, Power Point).
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="flex-card">
-                        <div class="flex-card-header">
-                            Certificates
-                        </div>
-                        <div class="flex-card-body">
-                            <table class="table-flex">
-                                <tr>
-                                    <td>Sept 2017 - August 2020</td>
-                                    <td>
-                                        Universitas Merdeka Malang<br>
-                                        Major: D3 Sistem Informasi
-                                    </td>                                    
-                                </tr>
-                                <tr>
-                                    <td>Sept 2019 - Nov 2019</td>
-                                    <td>
-                                        Digital Talent Scholarship<br>
-                                        Kementerian Komunikasi dan Informatika<br>
-                                        Scope: Junior Web Programming
-                                    </td>                                    
-                                </tr>
-                                <tr>
-                                    <td>July 2014 - May 2017</td>
-                                    <td>
-                                        SMK NASIONAL MALANG<br>
-                                        Major: Rekayasa Prengkat Lunak (Software Engineer)
-                                    </td>                                    
-                                </tr>
-                            </table>
+                        <div class="flex-card">
+                            <div class="flex-card-header">
+                                Certificates
+                            </div>
+                            <div class="flex-card-body">
+                                <table class="table-flex">
+                                    <tr>
+                                        <td>Sept 2017 - August 2020</td>
+                                        <td>
+                                            Universitas Merdeka Malang<br>
+                                            Major: D3 Sistem Informasi
+                                        </td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Sept 2019 - Nov 2019</td>
+                                        <td>
+                                            Digital Talent Scholarship<br>
+                                            Kementerian Komunikasi dan Informatika<br>
+                                            Scope: Junior Web Programming
+                                        </td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td>July 2014 - May 2017</td>
+                                        <td>
+                                            SMK NASIONAL MALANG<br>
+                                            Major: Rekayasa Prengkat Lunak (Software Engineer)
+                                        </td>                                    
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex-sidebar">
-                <input type="checkbox" id="toggle-flex-sidebar-list">
-                <label for="toggle-flex-sidebar-list">
-                    <i id="flex-toggle" class="fas fa-bars"></i>
-                </label>
-                <h3>Resume List</h3>
-                <hr>
-                <div class="flex-sidebar-list">
-                    <a href="">Education</a>
-                    <a href="">Language</a>
-                    <a href="">Skills</a>
-                    <a href="">Certificates</a>
+                <div class="flex-sidebar">
+                    <input type="checkbox" id="toggle-flex-sidebar-list">
+                    <label for="toggle-flex-sidebar-list">
+                        <i id="flex-toggle" class="fas fa-bars"></i>
+                    </label>
+                    <h3>Resume List</h3>
+                    <hr>
+                    <div class="flex-sidebar-list">
+                        <a href="">Education</a>
+                        <a href="">Language</a>
+                        <a href="">Skills</a>
+                        <a href="">Certificates</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,6 +15,11 @@ body{
     background-color: rgb(247, 247, 247);
 }
 
+.flex-wrapper-container{
+    display: flex;
+    max-width: 100%;
+}
+
 .flex-about-timeline-container{
     /* font-family:
     'Gill Sans',
@@ -308,13 +313,5 @@ body{
 
     .flex-logo{
         display: none;
-    }
-}
-
-@media (max-width: 321px){
-    .img-flex img:nth-child(1),
-    .img-flex img:nth-child(2){
-        width: 200px;
-        height: 200px;
     }
 }

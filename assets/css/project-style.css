@@ -12,6 +12,11 @@
     padding: 0;
 }
 
+.flex-wrapper-conatiner{
+    display: flex;
+    max-width: 100%;
+}
+
 /* Project Main Page */
 .flex-jumbotron-container{
     display: flex;
