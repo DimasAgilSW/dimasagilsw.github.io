@@ -289,7 +289,7 @@ td{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 769px){
     .flex-sidebar-list a{
         margin: 5px 5px;
     }
