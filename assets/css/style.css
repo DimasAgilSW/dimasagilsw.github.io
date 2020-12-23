@@ -394,6 +394,10 @@ td{
     .flex-jumbotron-content img{
         width: 70%;
     }
+    
+    .flex-card-header{
+        background-color: #470b0b;
+    }
 
     .table-flex{
         padding: 0;
@@ -404,6 +408,12 @@ td{
         flex-direction: column;
         margin: 5px auto;
         /* padding: 10px; */
+    }
+    
+    .table-flex td:nth-child(1){
+        background-color: #000;
+        border-radius: 7px;
+        color: #fff;
     }
 
     .table-flex td:nth-child(1),
