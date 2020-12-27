@@ -12,7 +12,7 @@
 }
 
 body{
-    max-width: 70%;
+/*     width: 70%; */
     margin: 0 auto;
     /* transition: 0.5s; */
     background-color: #f7f7f7;
@@ -20,7 +20,7 @@ body{
     background-size: 70% 1500px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: -40px;
+    background-position-x: -30px;
     background-position-y: 35px;
 }
 
@@ -58,7 +58,8 @@ input[type=checkbox]{
 
 .flex-wrapper-container{
     display: flex;
-    max-width: 100%;
+    width: 70%;
+    margin: 0 auto;
     flex-direction: column;
 }
 
@@ -266,14 +267,35 @@ td{
 /* END */
 
 /* Responsive Breakpoint */
-@media (max-width: 1173px){
+@media (max-width: 1441px){
+    .flex-wrapper-container{
+        width: 80%;
+    }
     body{
-        background-position-x: -200px;
-        background-position-y: -60px;
+        background-position-x: -10px;
+        background-position-y: 0;
+    }
+    .flex-wrapper{
+        display: flex;
+        width: 100%;
+    }
+    .flex-jumbotron-content{
+    max-width: 40%;
+    margin: 0 0 0 50%;
+    padding: 11% 0;
     }
 }
-
 @media (min-width: 1024px){
+    body{
+        background-size: 100% 1500px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-x: -200px;
+        background-position-y: 5px;
+    }
+    .flex-wrapper-container{
+        width: 100%
+    }
     .flex-main-content{
         /* max-width: 100%; */
         flex: 3;
@@ -300,13 +322,19 @@ td{
 }
 
 @media (max-width: 768px){
+    .flex-wrapper-container{
+        width: 100%;
+    }
     .flex-sidebar-list a{
         margin: 5px 5px;
     }
 
     body{
+        background-size: 100% 1500px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position-x: -150px;
-        background-position-y: -60px;
+        background-position-y: 5px;
     }
     /* body{
         background-position-x: -200px;
@@ -325,7 +353,7 @@ td{
         flex-direction: row;
         position: absolute;
         width: 100%;
-        top: 10%;
+        top: 5.5%;
         left: 0;
         margin: 40px auto;
         /* z-index: 0; */
@@ -441,7 +469,7 @@ td{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        top: 10%;
+        top: 6%;
         left: 0;
         /* margin: 40px auto; */
         /* z-index: 0; */
