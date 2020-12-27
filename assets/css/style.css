@@ -270,7 +270,7 @@ td{
 /* END */
 
 /* Responsive Breakpoint */
-@media (max-width: 1441px){
+@media (max-width: 1440px){
     .flex-wrapper-container{
         display: flex;
         max-width: 90%;
@@ -293,7 +293,7 @@ td{
         padding: 11% 0;
     }
 }
-@media (max-width: 1025px){
+@media (max-width: 1024px){
     .flex-wrapper-container{
         display: flex;
         max-width: 100%;
@@ -431,7 +431,7 @@ td{
     
     .flex-card-header{
         background-color: #470b0b;
-        max-width: 70%;
+        width: 70%;
     }
 
     .table-flex{
@@ -484,8 +484,12 @@ td{
     }
 }
 
-@media (max-width: 321px){
+@media (max-width: 320px){
     .flex-navbar-logo img{
         width: 25%;
+    }
+
+    .flex-card-header{
+        width: 80%;
     }
 }

@@ -14,8 +14,9 @@
 
 .flex-wrapper-container{
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .flex-jumbotron-warning{
@@ -268,6 +269,12 @@
 }
 /* END */
 /* Responsive Breakpoint */
+@media (max-width: 1024px){
+    .flex-wrapper-container{
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 769px){
     .flex-card-items{
         width: 45%;
