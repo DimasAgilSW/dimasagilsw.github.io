@@ -431,7 +431,7 @@ td{
     
     .flex-card-header{
         background-color: #470b0b;
-        width: 70%;
+        max-width: 70%;
     }
 
     .table-flex{
