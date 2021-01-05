@@ -183,7 +183,9 @@ body{
 
 .flex-media-social{
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    flex-flow: row wrap
 }
 
 .flex-media-social i{
@@ -193,12 +195,23 @@ body{
     cursor: pointer;
 }
 
-.flex-media-social i:nth-child(1){color: #0e76a8;}
-.flex-media-social i:nth-child(2){color: #1da1f2;}
-.flex-media-social i:nth-child(3){color: #3b5998;}
-.flex-media-social i:nth-child(4){color: #4c5fd7;}
-.flex-media-social i:nth-child(5){color: #25D366;}
+.flex-media-social a{
+    text-decoration: none;
+}
 
+.flex-media-social-w-capt:nth-child(1) i{color: #0e76a8;}
+.flex-media-social-w-capt:nth-child(2) i{color: #1da1f2;}
+.flex-media-social-w-capt:nth-child(3) i{color: #3b5998;}
+.flex-media-social-w-capt:nth-child(4) i{color: #4c5fd7;}
+.flex-media-social-w-capt:nth-child(5) i{color: #25D366;}
+
+.flex-media-social-w-capt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
 .flex-span-arrow{
     display: flex;
     width: 100%;
@@ -227,7 +240,6 @@ body{
 .flex-span-arrow i{
     text-align: center;
 }
-
 /* Responsive Breakpoint */
 @media (max-width: 1024px){
     .flex-about-timeline-container{

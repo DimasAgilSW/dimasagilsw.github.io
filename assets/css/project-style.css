@@ -23,6 +23,12 @@
     display: flex;
     margin: 30px 0;
     justify-content: center;
+    text-align: center;
+}
+
+.flex-desc-project p{
+    margin: 10px 0;
+    font-size: 20px;
 }
 
 /* Project Main Page */
@@ -224,8 +230,19 @@
 .flex-desc-project{
     /* border: 1px solid black; */
     display: flex;
+    flex-direction: column;
     text-align: justify;
     padding: 20px;
+}
+
+.flex-desc-project span{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.flex-desc-project ol{
+    font-size: 20px;
+    margin: 0 20px;
 }
 
 .flex-mockup-layout{
@@ -255,7 +272,7 @@
     box-shadow: 0 5px 8px 0 black;
     /* padding: 20px; */
     width: 95%;
-    /* height: 400px; */
+    /* height: 1000px; */
 }
 
 .flex-mockup-header{
@@ -272,6 +289,14 @@
 @media (max-width: 1024px){
     .flex-wrapper-container{
         max-width: 100%;
+    }
+    
+    .flex-mockup-layout{
+        flex-direction: column;
+    }
+    .flex-mockup-layout img{
+        height: auto;
+        width: 70%;
     }
 }
 
